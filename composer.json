@@ -1,0 +1,38 @@
+{
+  "$schema": "https://getcomposer.org/schema.json",
+  "name": "m2collective/filament-sdk",
+  "keywords": [
+    "filament",
+    "sdk"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/m2collective/filament-sdk",
+  "authors": [
+    {
+      "name": "bu0nq",
+      "email": "hello@bu0nq.ru",
+      "homepage": "https://bu0nq.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "M2Collective\\FilamentSDK\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "M2Collective\\FilamentSDK\\FilamentSDKServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
