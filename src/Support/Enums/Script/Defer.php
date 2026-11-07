@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\FilamentSDK\Support\Enums;
+namespace M2Collective\FilamentSDK\Support\Enums\Script;
 
 use Filament\Support\Contracts\HasLabel;
 
@@ -16,8 +16,8 @@ enum Defer: int implements HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::FALSE => __('sdk::fields/defer.options.false'),
-            self::TRUE => __('sdk::fields/defer.options.true'),
+            self::FALSE => __('sdk::fields/fieldsets/script/defer.options.false'),
+            self::TRUE => __('sdk::fields/fieldsets/script/defer.options.true'),
         };
     }
 }

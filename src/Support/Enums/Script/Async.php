@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\FilamentSDK\Support\Enums;
+namespace M2Collective\FilamentSDK\Support\Enums\Script;
 
 use Filament\Support\Contracts\HasLabel;
 
@@ -16,8 +16,8 @@ enum Async: int implements HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::FALSE => __('sdk::fields/async.options.false'),
-            self::TRUE => __('sdk::fields/async.options.true'),
+            self::FALSE => __('sdk::fields/fieldsets/script/async.options.false'),
+            self::TRUE => __('sdk::fields/fieldsets/script/async.options.true'),
         };
     }
 }
