@@ -13,8 +13,8 @@ final class FilamentSDKServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadTranslationsFrom(
-            path: __DIR__ . '/lang',
-            namespace: 'filament-sdk'
+            path: __DIR__ .'/../lang',
+            namespace: 'sdk'
         );
     }
 }
