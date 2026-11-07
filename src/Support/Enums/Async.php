@@ -16,8 +16,8 @@ enum Async: int implements HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::FALSE => __('sdk::fields/async.options.0'),
-            self::TRUE => __('sdk::fields/async.options.1'),
+            self::FALSE => __('sdk::fields/async.options.false'),
+            self::TRUE => __('sdk::fields/async.options.true'),
         };
     }
 }
