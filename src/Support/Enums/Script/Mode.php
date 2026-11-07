@@ -19,7 +19,7 @@ enum Mode: string implements HasLabel
         return match ($this) {
             self::FILE => __('sdk::fields/fieldsets/favicon/mode.options.file'),
             self::PATH => __('sdk::fields/fieldsets/favicon/mode.options.path'),
-            self::TEXT => __('sdk::fields/fieldsets/script/mode.options.text'),
+            self::TEXT => __('sdk::fields/groups/script/mode.options.text'),
         };
     }
 }

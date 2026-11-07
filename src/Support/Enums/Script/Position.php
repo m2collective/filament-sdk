@@ -16,8 +16,8 @@ enum Position: string implements HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::HEAD => __('sdk::fields/fieldsets/script/position.options.head'),
-            self::BODY => __('sdk::fields/fieldsets/script/position.options.body'),
+            self::HEAD => __('sdk::fields/groups/script/position.options.head'),
+            self::BODY => __('sdk::fields/groups/script/position.options.body'),
         };
     }
 }

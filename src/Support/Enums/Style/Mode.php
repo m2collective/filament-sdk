@@ -17,9 +17,9 @@ enum Mode: string implements HasLabel
     public function getLabel(): string
     {
         return match ($this) {
-            self::FILE => __('sdk::fields/fieldsets/style/mode.options.file'),
-            self::PATH => __('sdk::fields/fieldsets/style/mode.options.path'),
-            self::TEXT => __('sdk::fields/fieldsets/style/mode.options.text'),
+            self::FILE => __('sdk::fields/groups/style/mode.options.file'),
+            self::PATH => __('sdk::fields/groups/style/mode.options.path'),
+            self::TEXT => __('sdk::fields/groups/style/mode.options.text'),
         };
     }
 }
